@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .column-container {
+      display: flex;
+      margin: 80px auto 0 auto;
+      border-radius: 5px;
+      width: 100vw;
+      justify-content: center;
+    }
+
+    .column {
+      width: 20vw;
+      background-color: rgb(68, 42, 10);
+      padding: 40px 40px 60px 40px;
+    }
+
+    .type-car {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+    }
+
+    .description-car {
+      color: rgb(224, 222, 222);
+      margin-bottom: 70px;
+      line-height: 1.7;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn-learn-more {
+      text-decoration: none;
+      color: rgb(233, 132, 16);
+      padding: 15px 25px;
+      border-radius: 35px;
+      background-color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .column1 {
+      background-color: rgb(233, 132, 16);
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+
+    .column2 {
+      background-color: rgb(46, 125, 139);
+    }
+
+    .column2 .btn-learn-more {
+      color: rgb(46, 125, 139);
+    }
+
+    .column3 {
+      background-color: rgb(1, 70, 66);
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .column3 .btn-learn-more {
+      color: rgb(1, 70, 66);
+    }
+
+    @media(max-width:700px) {
+      .column-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .column {
+        width: 50vw;
+      }
+
+      .column1 {
+        border-radius: 5px;
+      }
+
+      .column3 {
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <div class="column-container">
+
+      <div class="column column1">
+        <img src="images/icon-sedans.svg" alt="icon car sedan">
+        <h2 class="type-car"> Sedans</h2>
+        <p class="description-car"> Choose a sedan for its affordability and excellent fuel economy. Ideal for
+          cruising in the city
+          or on your next road trip.
+        </p>
+        <a href="#" class="btn-learn-more">Learn More</a>
+      </div>
+
+
+      <div class="column column2">
+        <img src="images/icon-suvs.svg" alt="icon car suv">
+        <h2 class="type-car">SUVs</h2>
+        <p class="description-car">
+          Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+          and off-road adventures.
+        </p>
+        <a href="#" class="btn-learn-more">Learn More</a>
+      </div>
+
+
+      <div class="column column3">
+        <img src="images/icon-luxury.svg" alt="icon car luxury">
+        <h2 class="type-car"> Luxury</h2>
+        <p class="description-car">
+          Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+          rental and arrive in style.
+        </p>
+        <a href="#" class="btn-learn-more">Learn More</a>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
